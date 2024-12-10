@@ -1,0 +1,6 @@
+/_pycache/
+.vscode/
+*.tmp
+.ipynb_checkpoints/
+*.ipynb
+icitem/
