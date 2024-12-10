@@ -1,0 +1,162 @@
+/* 全局样式 */
+body {
+    background: linear-gradient(135deg, #3e4e50 0%, #395154 100%);
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+/* 搜索区块 */
+.search-section {
+    background: linear-gradient(135deg, #cae6ea 0%, #48c0d0 100%);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/*.search-section:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+/* 数据显示区块 */
+.data-section {
+    background: linear-gradient(135deg, #cae6ea 0%, #48c0d0 100%);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 表单元素样式 */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 12px 15px;
+    background: rgba(255,255,255,0.9);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.25);
+    background: #ffffff;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #d9f6f9 0%, #70c9d3 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #acebf3 0%, #8be3eb 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,151,167,0.4);
+}
+
+/* 表格样式 */
+.table {
+    margin-top: 20px;
+    background: #c4c5bc;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+}
+
+.table thead th {
+    background: linear-gradient(135deg, #5c582e 0%, #5f5a1d 100%);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.table tbody td {
+    border: 1px solid #e0f7fa;
+    padding: 12px;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0f7fa 100%);
+    transform: scale(1.01);
+}
+
+/* DataTables 样式优化 */
+.dataTables_wrapper .dataTables_paginate {
+    padding: 15px 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 8px 15px;
+    margin: 0 3px;
+    border: 1px solid #4dd0e1;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    color: #00acc1 !important;
+    transition: all 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: linear-gradient(135deg, #4dd0e1 0%, #26c6da 100%);
+    color: white !important;
+    border-color: #00acc1;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: linear-gradient(135deg, #00acc1 0%, #0097a7 100%);
+    border-color: #0097a7;
+    color: white !important;
+}
+
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+    border: 2px solid #4dd0e1;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background: #ffffff;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: #00acc1;
+    box-shadow: 0 0 0 0.2rem rgba(0,172,193,0.25);
+}
+
+/* 警告信息样式 */
+.alert {
+    background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: #0288d1;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .search-section, .data-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .table thead th,
+    .table tbody td {
+        padding: 10px;
+    }
+}

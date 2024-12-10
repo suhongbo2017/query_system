@@ -6,13 +6,14 @@ import pyodbc
 #pandas库进行数据分析
 import pandas as pd
 
+import os
+from flask import current_app
 
 # 设置连接参数
-
-server = '192.168.0.234'
-database = 'AIS20191210135722'
-username = 'sa'
-password = 'Jhs16888'
+server = os.getenv('SQL_SERVER', '192.168.0.234')
+database = os.getenv('SQL_DATABASE', 'AIS20191210135722')
+username = os.getenv('SQL_USERNAME', 'sa')
+password = os.getenv('SQL_PASSWORD', 'Jhs16888')
 DSN= 'seord'
 
 # seordNumber= (input('请输入单号进行查询：')).upper()

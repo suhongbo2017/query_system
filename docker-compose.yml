@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=production
+      - FLASK_APP=main.py
+      - SQL_SERVER=192.168.0.234
+      - SQL_DATABASE=AIS20191210135722
+      - SQL_USERNAME=sa
+      - SQL_PASSWORD=Jhs16888 
